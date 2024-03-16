@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Advanced SOC Design Lab - FSIC Design and Simulation
 This lab material is for Advanced SoC design course lab-1.
 
@@ -17,3 +18,6 @@ The material of this lab is originated from [/bol-edu/fsic_fpga](https://github.
 1. The code with `// Modified` in `/fsic_fpga/rtl/user/user_subsys/axil_slav/rtl/axil_slav.v`
 2. Remove "eFabless ChipIgnite Schedule (2023/11) and Preparation", "How to run simulation" parts in `/fsic_fpga/README.md`
 
+=======
+# Advanced-SOC
+>>>>>>> 63a062d8bb871f932def1c03e9ed960782cda346
