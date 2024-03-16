@@ -1,0 +1,42 @@
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.1/bin/unwrapped/lnx64.o/xelab tb_fsic -debug typical --snapshot tb_fsic_xelab --timescale 1ns/1ns 
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.fsic_clock_div
+Compiling module work.CFG_CTRL(pADDR_WIDTH=15)
+Compiling module work.axilite_master
+Compiling module work.axilite_slave
+Compiling module work.axis_master
+Compiling module work.axis_slave
+Compiling module work.axi_ctrl_logic
+Compiling module work.AXIL_AXIS(pADDR_WIDTH=15)
+Compiling module work.AXIS_SW(pADDR_WIDTH=15)
+Compiling module work.fsic_coreclk_phase_cnt
+Compiling module work.fsic_io_serdes_rx
+Compiling module work.IO_SERDES_default
+Compiling module work.sram_default
+Compiling module work.LOGIC_ANLZ
+Compiling module work.AXIL_SLAV
+Compiling module work.USER_PRJ0_default
+Compiling module work.multiplier_adder
+Compiling module work.fir
+Compiling module work.bram11
+Compiling module work.USER_PRJ1
+Compiling module work.USER_PRJ2
+Compiling module work.USER_PRJ3
+Compiling module work.AXIS_SLAV
+Compiling module work.AXIS_MSTR
+Compiling module work.IRQ_MUX
+Compiling module work.LA_MUX
+Compiling module work.USER_SUBSYS(pADDR_WIDTH=15)
+Compiling module work.FSIC_CLKRST
+Compiling module work.MPRJ_IO(pADDR_WIDTH=15)
+Compiling module work.FSIC
+Compiling module work.fpga
+Compiling module work.tb_fsic
+Built simulation snapshot tb_fsic_xelab
