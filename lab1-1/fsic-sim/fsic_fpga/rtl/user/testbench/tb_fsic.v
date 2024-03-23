@@ -160,9 +160,9 @@ module tb_fsic #( parameter BITS=32,
     `else
 
 	//*************************************//
-	//                       			   //
+	//                                     //
 	//  Change data_length from 128 to 64  //
-	//                       			   //
+	//                       	        //
 	//*************************************//       
     
         reg [6:0] soc_to_fpga_axis_expect_count;
@@ -477,6 +477,18 @@ FSIC #(
 		$finish;
         
     end
+
+	//*******************************//
+	//                               //
+	//  Dump file for waveform chk   //
+	//                               //
+	//*******************************//    
+    
+	initial begin
+		$dumpfile("Lab1-1.vcd");
+		$dumpvars(0, tb_fsic);
+	end    
+    
     
 	//WB Master wb_ack_o handling
 	always @( posedge wb_clk or posedge wb_rst) begin
@@ -674,7 +686,7 @@ FSIC #(
 	
 	//***********************//
 	//                       //
-	//    Config Pick up	 //
+	//    Config Pick up     //
 	//                       //
 	//***********************//
 	task config_pick_up;
@@ -705,9 +717,9 @@ FSIC #(
 	endtask
 
 	//*******************************//
-	//                       		 //
-	//  SoC side check FIR is idle	 //
-	//                       		 //
+	//                               //
+	//  SoC side check FIR is idle   //
+	//                               //
 	//*******************************//
 	task soc_FIR_idle_chk;
 		begin
@@ -719,9 +731,9 @@ FSIC #(
 	endtask
 	
 	//*******************************//
-	//                       		 //
-	//  FPGA side check FIR is idle	 //
-	//                       		 //
+	//                               //
+	//  FPGA side check FIR is idle  //
+	//                               //
 	//*******************************//
 	task FPGA_FIR_idle_chk;
 		begin
@@ -735,9 +747,9 @@ FSIC #(
 	endtask	
 
 	//*******************************//
-	//                       		 //
-	//  SoC side readback and check	 //
-	//                       		 //
+	//                               //
+	//  SoC side readback and check  //
+	//                               //
 	//*******************************//
 	task soc_readback_check; 
 		input [11:0] offset;	//4K range
@@ -760,9 +772,9 @@ FSIC #(
 	endtask
 	
 	//***********************************//
-	//                       		 	 //
-	//  FPGA side readback and check	 //
-	//                       		 	 //
+	//                                   //
+	//  FPGA side readback and check     //
+	//                                   //
 	//***********************************//
 	
 	task FPGA_readback_check;
@@ -793,9 +805,9 @@ FSIC #(
 	endtask	
 
 	//*******************************//
-	//                       		 //
-	//   	Start FIR from SoC	 	 //
-	//                       		 //
+	//                               //
+	//   	Start FIR from SoC       //
+	//                               //
 	//*******************************//
 	
 	task soc_start_FIR;
@@ -807,9 +819,9 @@ FSIC #(
 	endtask
 	
 	//*******************************//
-	//                       		 //
-	//  	Start FIR from FPGA 	 //
-	//                       		 //
+	//                               //
+	//  	Start FIR from FPGA      //
+	//                               //
 	//*******************************//
 	
 	task FPGA_start_FIR;
@@ -821,12 +833,12 @@ FSIC #(
 	endtask
 	
 	//*******************************//
-	//                       		 //
-	//  FIR data X, Y stream data	 //
-	//  1. Feed in data X[n]		 //
-	//  2. Get output data Y[n] 	 //
+	//                               //
+	//  FIR data X, Y stream data    //
+	//  1. Feed in data X[n]         //
+	//  2. Get output data Y[n]      //
 	//  3. Compare with Golden Y[n]  //
-	//                       		 //		
+	//                               //		
 	//*******************************//
 	task FIR_X_Y_stream;
 		begin
@@ -867,9 +879,9 @@ FSIC #(
 
 
 	//***************************************//
-	//                       		 		 //
-	//       Reset capture and expect	  	 //
-	//                       		 		 //
+	//                                       //
+	//       Reset capture and expect        //
+	//                                       //
 	//***************************************//
 	task reset_capture_expect;
 		begin
@@ -885,9 +897,9 @@ FSIC #(
 	
 		
 	//*******************************//
-	//                       		 //
-	//       Golden2AxiSwitch	  	 //
-	//                       		 //
+	//                               //
+	//       Golden2AxiSwitch        //
+	//                               //
 	//*******************************//
 	task Golden2Axis;
 	
@@ -924,9 +936,9 @@ FSIC #(
 	endtask
 	
 	//*******************************//
-	//                       		 //
-	//         FPGA AXIS REQ    	 //
-	//                       		 //
+	//                               //
+	//         FPGA AXIS REQ         //
+	//                               //
 	//*******************************//
 	task fpga_axis_req_v2;
 		input [31:0] data;
@@ -999,9 +1011,10 @@ FSIC #(
 	endtask
 	
 	//*******************************************************************//
-	//                       		 									 //
-	//    Use Mailbox to notify FPGA side to start X, Y stream transfer	 //
-	//                       		 									 //
+	//                                                                   //
+	//    Use Mailbox to notify FPGA side to start X, Y stream transfer  //
+	//                                                                   //
+	//	                                                                 //
 	//*******************************************************************//
 	task Mailbox2XYstream;
 		begin
@@ -1043,9 +1056,9 @@ FSIC #(
 	endtask
 	
 	//*******************************//
-	//                       	 	 //
-	//    FPGA to soc cfg write 	 //
-	//                       	 	 //
+	//                               //
+	//    FPGA to soc cfg write      //
+	//                               //
 	//*******************************//
 	
 	task FPGA2soc_up_cfg_write;
