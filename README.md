@@ -1,4 +1,4 @@
-## Advanced SoC Course
+# Advanced SoC Course
 https://github.com/bol-edu/caravel-soc_fpga-lab/tree/main/fsic-sim/fsic_fpga/rtl/user/testbench/tc/log/xsim.log
 
 # FSIC – IC Validation System
