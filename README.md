@@ -1,5 +1,5 @@
 # Advanced SoC Course
-https://github.com/bol-edu/caravel-soc_fpga-lab/tree/main/fsic-sim/fsic_fpga/rtl/user/testbench/tc/log/xsim.log
+https://github.com/bol-edu/
 
 # FSIC – IC Validation System
 The FSIC system consists of three components, the Caravel chip, FPGA and remote Jupyter Notebook.  The Caravel chip hosts the user projects. There could be multiple user projects in the user area. The Caravel chip contains a prebuilt SOC design released from eFabless. For details, please refer to Caravel Harness. The FPGA is an FPGA chip with SOC. Currently, we support the PYNQ-Z2 board. The following is the block diagram. It consists of PS (SOC) and PL (FPGA). A Jupyter notebook server runs on the PS. The designer can access the system remotely through a Jupyter Notebook web service. The PL part consists of part of the extended user project and testing functions.  The designer uses Jupyter Notebook web browser to access and control the remote validation system. It performs various tasks, including
