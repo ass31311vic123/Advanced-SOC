@@ -162,7 +162,7 @@ module tb_fsic #( parameter BITS=32,
 	//*************************************//
 	//                                     //
 	//  Change data_length from 128 to 64  //
-	//                       	        //
+	//                                     //
 	//*************************************//       
     
         reg [6:0] soc_to_fpga_axis_expect_count;
@@ -1014,7 +1014,7 @@ FSIC #(
 	//                                                                   //
 	//    Use Mailbox to notify FPGA side to start X, Y stream transfer  //
 	//                                                                   //
-	//	                                                                 //
+	//                                                                   //
 	//*******************************************************************//
 	task Mailbox2XYstream;
 		begin
