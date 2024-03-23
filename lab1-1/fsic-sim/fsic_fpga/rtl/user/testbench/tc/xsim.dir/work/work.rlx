@@ -20,7 +20,7 @@ Apr 18 2022
 /home/ubuntu/lab/lab1-1/fsic-sim/fsic_fpga/rtl/user/rtl/fsic.v,1710604426,systemVerilog,,/home/ubuntu/lab/lab1-1/fsic-sim/fsic_fpga/rtl/user/axilite_axis/rtl/axi_ctrl_logic.sv,,FSIC,,,../,,,,,
 /home/ubuntu/lab/lab1-1/fsic-sim/fsic_fpga/rtl/user/testbench/fpga.v,1710604426,systemVerilog,,/home/ubuntu/lab/lab1-1/fsic-sim/fsic_fpga/rtl/user/testbench/fsic_clock.v,,fpga,,,../,,,,,
 /home/ubuntu/lab/lab1-1/fsic-sim/fsic_fpga/rtl/user/testbench/fsic_clock.v,1710604426,systemVerilog,,/home/ubuntu/lab/lab1-1/fsic-sim/fsic_fpga/rtl/user/rtl/fsic.v,,fsic_clock_div,,,../,,,,,
-/home/ubuntu/lab/lab1-1/fsic-sim/fsic_fpga/rtl/user/testbench/tb_fsic.v,1711184177,systemVerilog,,/home/ubuntu/lab/lab1-1/fsic-sim/fsic_fpga/rtl/user/testbench/fpga.v,,tb_fsic,,,../,,,,,
+/home/ubuntu/lab/lab1-1/fsic-sim/fsic_fpga/rtl/user/testbench/tb_fsic.v,1711187409,systemVerilog,,/home/ubuntu/lab/lab1-1/fsic-sim/fsic_fpga/rtl/user/testbench/fpga.v,,tb_fsic,,,../,,,,,
 /home/ubuntu/lab/lab1-1/fsic-sim/fsic_fpga/rtl/user/user_subsys/axil_slav/rtl/axil_slav.v,1710604426,systemVerilog,,/home/ubuntu/lab/lab1-1/fsic-sim/fsic_fpga/rtl/user/user_subsys/axis_mstr/rtl/axis_mstr.v,,AXIL_SLAV,,,../,,,,,
 /home/ubuntu/lab/lab1-1/fsic-sim/fsic_fpga/rtl/user/user_subsys/axis_mstr/rtl/axis_mstr.v,1710604426,systemVerilog,,/home/ubuntu/lab/lab1-1/fsic-sim/fsic_fpga/rtl/user/user_subsys/axis_slav/rtl/axis_slav.v,,AXIS_MSTR,,,../,,,,,
 /home/ubuntu/lab/lab1-1/fsic-sim/fsic_fpga/rtl/user/user_subsys/axis_slav/rtl/axis_slav.v,1710604426,systemVerilog,,/home/ubuntu/lab/lab1-1/fsic-sim/fsic_fpga/rtl/user/user_subsys/irq_mux/rtl/irq_mux.v,,AXIS_SLAV,,,../,,,,,
